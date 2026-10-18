@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Brasa Negra",
+  "description": "Smash burgers a la brasa con carne madurada y pan brioche del día en Madrid.",
+  "url": "https://www.brasanegra.es/",
+  "image": "https://www.brasanegra.es/hero-burger.jpg",
+  "telephone": "+34910000000",
+  "servesCuisine": ["Hamburguesas", "Americana"],
+  "priceRange": "€€",
+  "acceptsReservations": true,
+  "menu": "https://www.brasanegra.es/#carta",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle del Fuego 12",
+    "addressLocality": "Madrid",
+    "postalCode": "28004",
+    "addressCountry": "ES"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "13:00", "closes": "16:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "20:00", "closes": "23:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday","Sunday"], "opens": "13:00", "closes": "00:30"}
+  ]
+}

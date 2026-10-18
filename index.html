@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Brasa Negra | Smash burgers a la brasa en Madrid</title>
+  <meta name="description" content="Hamburguesas smash a la brasa con carne madurada y pan brioche del día en Madrid. Reserva mesa o pide para llevar en Brasa Negra.">
+  <link rel="canonical" href="https://manuroma-es.github.io/brasa-negra/">
+  <meta property="og:title" content="Brasa Negra · Hecha al fuego, servida sin prisa">
+  <meta property="og:description" content="Smash burgers a la brasa en Madrid. Carne madurada, brioche del día y cheddar fundido.">
+  <meta property="og:image" content="https://manuroma-es.github.io/brasa-negra/img/og-brasa-negra.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Brasa Negra, smash burgers a la brasa en Madrid">
+  <meta property="og:url" content="https://manuroma-es.github.io/brasa-negra/">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon-32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="img/video/frames/f001.webp" fetchpriority="high" media="not ((max-width: 800px) and (orientation: portrait))">
+  <link rel="preload" as="image" href="img/video/frames-v/f001.webp" fetchpriority="high" media="(max-width: 800px) and (orientation: portrait)">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Brasa Negra",
+  "description": "Smash burgers a la brasa con carne madurada y pan brioche del día en Madrid.",
+  "url": "https://www.brasanegra.es/",
+  "image": "https://www.brasanegra.es/hero-burger.jpg",
+  "telephone": "+34910000000",
+  "servesCuisine": ["Hamburguesas", "Americana"],
+  "priceRange": "€€",
+  "acceptsReservations": true,
+  "menu": "https://www.brasanegra.es/#carta",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle del Fuego 12",
+    "addressLocality": "Madrid",
+    "postalCode": "28004",
+    "addressCountry": "ES"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "13:00", "closes": "16:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "20:00", "closes": "23:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday","Sunday"], "opens": "13:00", "closes": "00:30"}
+  ]
+}
+  </script>
+</head>
+<body>
+  <video class="chispas-capa" muted loop playsinline autoplay aria-hidden="true"><source src="img/secciones/chispas-loop.mp4" type="video/mp4"></video>
+  <canvas id="embers" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="logo" href="#"><img src="img/llama.png" alt="" class="llama">Brasa Negra</a>
+    <nav>
+      <a href="#carta">Carta</a>
+      <a href="#brasa">Nuestra brasa</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#donde">Dónde estamos</a>
+    </nav>
+    <a class="btn btn-small" href="#reserva">Pide ahora</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-sticky">
+        <canvas class="seq" aria-hidden="true"></canvas>
+        <picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/video/montaje-movil-ultimo.jpg"><img class="seq-poster" src="img/video/montaje-ultimo.jpg" alt="Hamburguesa de Brasa Negra montada capa a capa sobre pizarra: pan brioche, carne a la brasa, cheddar fundido, cebolla caramelizada, tomate y lechuga"></picture>
+        <div class="velo" aria-hidden="true"></div>
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="quemar" x="-5%" y="-20%" width="110%" height="140%" color-interpolation-filters="sRGB">
+          <feTurbulence type="fractalNoise" baseFrequency="0.011 0.02" numOctaves="4" seed="7" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1.6 0 0 0 -0.3" result="na"/>
+          <feComponentTransfer in="na" result="m"><feFuncA id="qM" type="linear" slope="14" intercept="14"/></feComponentTransfer>
+          <feComponentTransfer in="na" result="e"><feFuncA id="qE" type="linear" slope="14" intercept="14"/></feComponentTransfer>
+          <feComponentTransfer in="na" result="c"><feFuncA id="qC" type="linear" slope="6" intercept="6"/></feComponentTransfer>
+          <feComposite in="SourceGraphic" in2="m" operator="in" result="txt0"/>
+          <feFlood flood-color="#3A1E0C"/><feComposite in2="c" operator="out"/><feComposite in2="txt0" operator="in" result="chamusca"/>
+          <feMerge result="txt"><feMergeNode in="txt0"/><feMergeNode in="chamusca"/></feMerge>
+          <feFlood flood-color="#FFB23F"/><feComposite in2="e" operator="in"/><feComposite in2="SourceAlpha" operator="in" result="borde"/>
+          <feGaussianBlur in="borde" stdDeviation="3" result="glow"/>
+          <feMerge><feMergeNode in="glow"/><feMergeNode in="borde"/><feMergeNode in="txt"/></feMerge>
+        </filter></svg>
+        <canvas class="chispas-quema" aria-hidden="true"></canvas>
+        <div class="frases" aria-hidden="true">
+          <p class="frase intro" data-in="0" data-out="0.08"><span class="eyebrow">Smash burgers a la brasa · Madrid</span><span class="scroll-hint"><span class="d">Desliza para montarla ↓</span><span class="m">Desliza ↓</span></span></p>
+          <p class="frase" data-in="0.09" data-out="0.165">180 g de vaca madurada.</p>
+          <p class="frase" data-in="0.175" data-out="0.245"><span class="d">Cheddar fundido sobre la brasa.</span><span class="m">Cheddar fundido.</span></p>
+          <p class="frase" data-in="0.255" data-out="0.395"><span class="d">Cebolla caramelizada, dos horas a fuego lento.</span><span class="m">Cebolla, 2 h a fuego lento.</span></p>
+          <p class="frase" data-in="0.405" data-out="0.55"><span class="d">Tomate de temporada. Lechuga recién cortada.</span><span class="m">Tomate y lechuga frescos.</span></p>
+          <p class="frase" data-in="0.56" data-out="0.625">Brioche del día.</p>
+          <p class="frase grande lenta" data-in="0.555" data-out="0.70">Capa a capa.</p>
+          <p class="frase grande quema" data-in="0.76" data-out="0.918" data-burn="0.868">Ahora, el fuego.</p>
+          <p class="frase grande sube" data-in="0.92" data-out="1.2">El fuego hace el trabajo</p>
+        </div>
+        <div class="hero-copy">
+          <h1>Hecha al fuego. <br class="m">Servida sin prisa.</h1>
+          <p class="lead">Carne madurada, pan brioche del día y cheddar que se funde sobre la brasa. Así de simple, así de bueno.</p>
+          <div class="ctas">
+            <a class="btn" href="#carta">Ver la carta</a>
+            <a class="btn btn-ghost" href="#reserva">Reserva mesa</a>
+          </div>
+          <p class="micro">Recogida en 15 min · Envío a domicilio</p>
+        </div>
+        <div class="progreso" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <section class="brasa" id="brasa">
+      <video class="brasa-video" muted loop playsinline preload="none" poster="img/secciones/brasas-fondo.webp" aria-hidden="true"><source src="img/secciones/brasas-loop.mp4" type="video/mp4"></video>
+      <div class="split">
+        <div class="reveal">
+          <h2>El fuego hace el trabajo</h2>
+          <p>No usamos plancha eléctrica ni atajos. Cocinamos cada hamburguesa sobre brasa de carbón vegetal, a más de 400 °C, para conseguir esa costra tostada por fuera y jugosa por dentro.</p>
+        </div>
+        <video class="reveal parrilla-video" muted loop playsinline autoplay preload="metadata" poster="img/fotos/parrilla-brasa.jpg" aria-label="Carne de vaca madurada sellándose sobre la parrilla de brasa de carbón vegetal, con llamas y chispas"><source src="img/secciones/parrilla-loop.mp4" type="video/mp4"></video>
+      </div>
+      <img class="reveal mask foto-ing" src="img/fotos/ingredientes.jpg" loading="lazy" alt="Ingredientes frescos de Brasa Negra sobre pizarra: carne picada, pan brioche, tomates, lechuga, cheddar, cebolla morada, pepinillos y brasas de carbón" width="1280" height="720">
+      <div class="bloques">
+        <div class="reveal bloque"><img src="img/secciones/brasas-fondo.webp" class="b-fondo" alt="" loading="lazy"><img src="img/capas/carne.png" class="b-carne" alt="Medallón de carne de vaca madurada" loading="lazy"><div class="b-txt"><h3>Carne madurada</h3><p>Vaca seleccionada y madurada para más sabor.</p></div></div>
+        <div class="reveal bloque"><img src="img/fotos/burger-despiece.jpg" class="b-fondo" alt="Ingredientes de la hamburguesa por capas, recién preparados" loading="lazy"><div class="b-txt"><h3>Picada cada día</h3><p>Nada congelado, nada de ayer.</p></div></div>
+        <div class="reveal bloque"><video class="b-fondo b-video" muted loop playsinline preload="none" poster="img/secciones/brasas-fondo.webp" aria-hidden="true"><source src="img/secciones/brasas-loop.mp4" type="video/mp4"></video><div class="b-txt"><h3>Brasa de verdad</h3><p>Carbón vegetal y humo natural.</p></div></div>
+      </div>
+    </section>
+
+    <div class="franja " aria-hidden="true"><div class="franja-pista"><span>400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · 400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · 400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · 400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · </span><span>400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · 400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · 400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · 400 °C · CARBÓN VEGETAL · SIN ATAJOS · PICADA CADA DÍA · </span></div></div>
+    <section class="historia" id="historia">
+      <div class="historia-sticky">
+        <picture><source media="(max-width: 800px) and (orientation: portrait)" srcset="img/secciones/entrada-local-movil-poster.jpg"><img class="historia-poster" src="img/fotos/local-interior.jpg" loading="lazy" alt="Interior de la hamburguesería Brasa Negra en Madrid, con paredes de ladrillo, mesas de madera, bombillas cálidas y la parrilla de brasa al fondo" width="1280" height="720"></picture>
+        <canvas class="historia-seq" aria-hidden="true"></canvas>
+        <div class="historia-velo" aria-hidden="true"></div>
+        <div class="historia-tramos" aria-hidden="true">
+          <p class="h-tramo" data-in="0.04" data-out="0.3">2019. Un patio de Lavapiés.</p>
+          <p class="h-tramo" data-in="0.3" data-out="0.54">Una parrilla de carbón.</p>
+          <p class="h-tramo" data-in="0.54" data-out="0.74">Y una idea fija.</p>
+        </div>
+        <div class="historia-texto">
+          <h2>Todo empezó con una parrilla</h2>
+          <p>Brasa Negra nació en 2019 en un patio de Lavapiés, con una parrilla de carbón y una idea fija: hacer la hamburguesa que nos gustaría comer a nosotros. Hoy seguimos igual, con la misma brasa, la misma receta y las mismas ganas.</p>
+          <p class="firma">El equipo de Brasa Negra</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="carta" id="carta">
+      <div class="carta-pin"><div class="carta-sticky">
+        <header class="carta-head">
+          <h2>Cuatro formas de arder</h2>
+          <p class="intro">Elige tu fuego. Todas con patatas de la casa.</p>
+        </header>
+        <div class="mazo">
+          <article class="naipe">
+            <div class="naipe-in">
+              <span class="tag">La más pedida</span>
+              <img class="foto" src="img/carta/recorte/volcan.webp" loading="lazy" alt="Hamburguesa Volcán de Brasa Negra con doble carne smash, doble cheddar fundido y cebolla caramelizada">
+              <span class="num" aria-hidden="true">01</span>
+              <h3 aria-label="Volcán"><span class="letras" aria-hidden="true"><span>V</span><span>o</span><span>l</span><span>c</span><span>á</span><span>n</span></span></h3>
+              <p class="gancho">Erupción de cheddar garantizada.</p>
+              <p class="desc">Doble smash, doble cheddar que se desborda, cebolla caramelizada y salsa de la casa.</p>
+              <div class="row"><span class="price">13,90 €</span><button class="add">La quiero</button></div>
+            </div>
+          </article>
+          <article class="naipe">
+            <div class="naipe-in">
+              <span class="tag">La original</span>
+              <img class="foto" src="img/carta/recorte/primera-brasa.webp" loading="lazy" alt="Hamburguesa Primera Brasa de Brasa Negra con carne a la brasa, cheddar, lechuga, tomate y pepinillo">
+              <span class="num" aria-hidden="true">02</span>
+              <h3 aria-label="Primera Brasa"><span class="letras" aria-hidden="true"><span>P</span><span>r</span><span>i</span><span>m</span><span>e</span><span>r</span><span>a</span><span>&nbsp;</span><span>B</span><span>r</span><span>a</span><span>s</span><span>a</span></span></h3>
+              <p class="gancho">La que lo empezó todo, allá por 2019.</p>
+              <p class="desc">Carne madurada, cheddar, lechuga, tomate y pepinillo. Sin trucos.</p>
+              <div class="row"><span class="price">11,50 €</span><button class="add">La quiero</button></div>
+            </div>
+          </article>
+          <article class="naipe">
+            <div class="naipe-in">
+              <span class="tag">Intensa</span>
+              <img class="foto" src="img/carta/recorte/humo-negro.webp" loading="lazy" alt="Hamburguesa Humo Negro de Brasa Negra con bacon, queso ahumado, cebolla crujiente y salsa barbacoa">
+              <span class="num" aria-hidden="true">03</span>
+              <h3 aria-label="Humo Negro"><span class="letras" aria-hidden="true"><span>H</span><span>u</span><span>m</span><span>o</span><span>&nbsp;</span><span>N</span><span>e</span><span>g</span><span>r</span><span>o</span></span></h3>
+              <p class="gancho">Se huele a leña desde la Gran Vía.</p>
+              <p class="desc">Bacon ahumado, queso ahumado, cebolla crujiente y barbacoa.</p>
+              <div class="row"><span class="price">13,50 €</span><button class="add">La quiero</button></div>
+            </div>
+          </article>
+          <article class="naipe">
+            <div class="naipe-in">
+              <span class="tag">Veggie</span>
+              <img class="foto" src="img/carta/recorte/fenix.webp" loading="lazy" alt="Hamburguesa vegetal Fénix de Brasa Negra con cheddar vegano, rúcula y tomate asado">
+              <span class="num" aria-hidden="true">04</span>
+              <h3 aria-label="Fénix"><span class="letras" aria-hidden="true"><span>F</span><span>é</span><span>n</span><span>i</span><span>x</span></span></h3>
+              <p class="gancho">Renace en cada bocado, de Malasaña a Vallecas.</p>
+              <p class="desc">Burger vegetal a la brasa, cheddar vegano, rúcula y tomate asado.</p>
+              <div class="row"><span class="price">12,50 €</span><button class="add">La quiero</button></div>
+            </div>
+          </article>
+        </div>
+        <div class="carta-fin">
+          <p class="pregunta">¿Ya sabes cuál?</p>
+          <a class="btn" href="#reserva">Pide ahora</a>
+        </div>
+        <p class="micro alergenos">Pregúntanos por los alérgenos. Tenemos opción sin gluten.</p>
+      </div></div>
+      <section class="banda-full" aria-labelledby="banda-titulo">
+        <video class="banda-video" muted loop playsinline preload="metadata" poster="img/secciones/patatas-cola-poster.jpg" aria-label="Patatas fritas de la casa cayendo en la cestilla junto a un vaso de refresco de cola llenándose con hielo"></video>
+        <div class="banda-txt">
+          <h2 id="banda-titulo">Patatas de la casa.<br>Cola bien fría.</h2>
+          <p>Cortadas a mano, fritas dos veces y con sal en escamas. Van con todas las burgers.</p>
+          <a class="btn" href="#reserva">Añádelo a tu pedido</a>
+        </div>
+      </section>
+    </section>
+
+    <div class="franja relleno" aria-hidden="true"><div class="franja-pista"><span>VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · </span><span>VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · VOLCÁN · PRIMERA BRASA · HUMO NEGRO · FÉNIX · </span></div></div>
+    <section class="numeros" id="numeros" aria-labelledby="numeros-t">
+      <div class="numeros-sticky">
+        <video class="brasas-bg" muted loop playsinline preload="none" poster="img/secciones/brasas-fondo.webp" aria-hidden="true"><source src="img/secciones/brasas-loop.mp4" type="video/mp4"></video>
+        <p class="ante" id="numeros-t">Los números del fuego</p>
+        <div class="termo" aria-hidden="true">
+          <div class="termo-tubo"><div class="termo-fill"></div></div>
+          <div class="termo-bulbo"></div>
+          <span class="termo-grados">0 °C</span>
+        </div>
+        <ul class="marcas">
+          <li data-at="0.18"><b data-n="50000" data-pre="+">+50.000</b><span>burgers servidas</span></li>
+          <li data-at="0.42"><b data-n="400" data-suf=" °C">400 °C</b><span>de brasa de verdad</span></li>
+          <li data-at="0.64"><b data-n="180" data-suf=" g">180 g</b><span>de carne en cada una</span></li>
+          <li data-at="0.84"><b data-n="0">0</b><span>congelados, nunca</span></li>
+        </ul>
+        <p class="nota-demo">Cifras de ejemplo.</p>
+      </div>
+    </section>
+
+    <section class="opiniones" id="opiniones">
+      <h2 class="reveal">Lo que dicen en la mesa</h2>
+      <p class="sub reveal">Sin filtros. Con mucha servilleta.</p>
+      <img class="rail" src="img/secciones/rail-acero.png" alt="" loading="lazy">
+      <div class="tickets">
+        <article class="ticket">
+          <header><b>Brasa Negra</b><span>Comanda</span></header>
+          <p class="t-meta"><span>Mesa 4</span><span>20:47</span></p>
+          <p class="t-pedido">1x Volcán</p>
+          <blockquote>"La Volcán no tiene rival. La mejor smash que he probado en Madrid."</blockquote>
+          <cite>Laura G.</cite>
+        </article>
+        <article class="ticket">
+          <header><b>Brasa Negra</b><span>Comanda</span></header>
+          <p class="t-meta"><span>Mesa 9</span><span>21:12</span></p>
+          <p class="t-pedido">2x Humo Negro</p>
+          <blockquote>"Se nota la brasa en cada bocado. Volveremos seguro."</blockquote>
+          <cite>Carlos M.</cite>
+        </article>
+        <article class="ticket">
+          <header><b>Brasa Negra</b><span>Comanda</span></header>
+          <p class="t-meta"><span>Para llevar</span><span>14:05</span></p>
+          <p class="t-pedido">1x Fénix + 1x Primera Brasa</p>
+          <blockquote>"Rápidos, amables y la carne en su punto. Diez de diez."</blockquote>
+          <cite>Marta R.</cite>
+        </article>
+      </div>
+      <p class="nota-demo">Reseñas de ejemplo.</p>
+    </section>
+
+    <section class="reserva" id="reserva">
+      <figure class="reserva-foto reveal"><img src="img/secciones/mesa-reserva.webp" alt="Mesa preparada en Brasa Negra con velas y la parrilla de brasa encendida al fondo" loading="lazy" width="1280" height="720"></figure>
+      <div class="reserva-caja">
+        <p class="antetitulo reveal">Junto al fuego</p>
+        <h2 class="reveal">¿Te guardamos sitio?</h2>
+        <p class="reveal">Reserva en menos de un minuto o pide para llevar y recógelo recién salido de la brasa.</p>
+        <div class="modo reveal" role="tablist">
+          <button type="button" class="on" data-modo="mesa" role="tab" aria-selected="true">Reservar mesa</button>
+          <button type="button" data-modo="llevar" role="tab" aria-selected="false">Pedir para llevar</button>
+        </div>
+        <form class="reveal" id="form-reserva" novalidate>
+          <label class="campo ancho"><span>Nombre</span><input required name="nombre" placeholder="Tu nombre" autocomplete="name"></label>
+          <label class="campo"><span>Teléfono</span><input required name="tel" type="tel" placeholder="600 000 000" autocomplete="tel"></label>
+          <label class="campo"><span>Fecha</span><input required name="fecha" type="date"></label>
+          <label class="campo"><span>Hora</span><input required name="hora" type="time"></label>
+          <label class="campo c-personas"><span>Personas</span><input required name="personas" type="number" min="1" max="20" placeholder="2"></label>
+          <button class="btn encender" type="submit"><span>Encender mi reserva</span></button>
+          <p class="msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <div class="franja " aria-hidden="true"><div class="franja-pista"><span>HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · </span><span>HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · HECHA AL FUEGO · SERVIDA SIN PRISA · MADRID · </span></div></div>
+    <section class="donde" id="donde">
+      <div class="donde-sticky">
+        <div class="mapa" aria-hidden="false">
+          <div class="mapa-mundo">
+            <img class="calles" src="img/secciones/mapa-panoramico.webp" alt="Mapa de Madrid con la ubicación de Brasa Negra marcada con una llama" loading="lazy" width="2560" height="1440">
+            <div class="calor"></div>
+            <svg class="estela" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><filter id="brillo" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+              <path class="estela-base" d="M90 690 C 170 610, 230 570, 300 530 S 400 480, 430 440 S 470 330, 545 315 S 640 330, 640 382"/>
+              <path class="estela-fuego" filter="url(#brillo)" d="M90 690 C 170 610, 230 570, 300 530 S 400 480, 430 440 S 470 330, 545 315 S 640 330, 640 382"/>
+              <circle class="estela-punta" r="7" cx="90" cy="690" filter="url(#brillo)"/>
+            </svg>
+            <div class="pin" role="img" aria-label="Brasa Negra, Calle del Fuego 12"><span class="onda"></span><span class="onda o2"></span><img src="img/llama.png" alt=""></div>
+            <p class="pin-label">Brasa Negra</p>
+            <video class="humo" muted loop playsinline autoplay preload="metadata" aria-hidden="true"><source src="img/secciones/humo-loop.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+        <header class="donde-head">
+          <p class="antetitulo">Dónde estamos</p>
+          <h2>Sigue el humo</h2>
+          <p class="tramo" aria-live="off"><span class="t1 on">Si hueles a leña, vas bien.</span><span class="t2">Ya casi estás.</span><span class="t3">Calle del Fuego 12, Madrid. Aquí arde.</span></p>
+          <address class="sr-only">Brasa Negra, Calle del Fuego 12, Madrid</address>
+        </header>
+        <div class="donde-ficha">
+          <p class="estado"><span class="punto"></span><span class="estado-txt">Mira nuestro horario</span></p>
+          <p class="horario">Lunes a jueves de 13:00 a 16:30 y de 20:00 a 23:30 · Viernes a domingo de 13:00 a 00:30</p>
+          <a class="btn btn-ghost" href="#">Cómo llegar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <img class="final-llama reveal" src="img/llama.png" alt="" aria-hidden="true">
+      <h2 class="reveal">El fuego ya está encendido</h2>
+      <p class="reveal">Solo falta tu hambre.</p>
+      <a class="btn btn-latido reveal" href="#reserva">Pide ahora</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="logo">Brasa Negra</p>
+    <p>Smash burgers a la brasa en Madrid</p>
+    <p class="links"><a href="#carta">Carta</a> · <a href="#reserva">Reservas</a> · <a href="#">Alérgenos</a> · <a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a> · <a href="#">Instagram</a> · <a href="#">TikTok</a></p>
+    <p>© 2026 Brasa Negra. Todos los derechos reservados. · Demo con datos de ejemplo</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
